@@ -1,0 +1,49 @@
+.filter-main {
+    width: auto;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.filter-item {
+    margin-bottom: 20px;
+}
+
+.filter{
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;    
+    cursor: pointer;
+}
+
+.filter-options {
+    margin-top: 10px;
+}
+
+.filter-option {
+    padding: 5px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-option input {
+    margin-right: 8px;
+}
+
+.filter p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.filter-option:hover {
+    background-color: #f0f0f0;
+}
