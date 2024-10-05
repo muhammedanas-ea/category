@@ -1,0 +1,17 @@
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 480px) {
+  .breadcrumb-list {
+    display: none;
+  }
+}

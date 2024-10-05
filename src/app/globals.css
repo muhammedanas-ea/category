@@ -1,0 +1,156 @@
+@import url(https://db.onlinewebfonts.com/c/ca671f001f1c1ac07ba12ef439e7e65a?family=SimplonNorm);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Simplon Norm", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  padding: 0px 96px;
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-items: center;
+}
+.item-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+}
+.item-count-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.item-count {
+  color: #252020;
+}
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.filter-text {
+  color: #888792;
+  text-decoration: underline;
+}
+.item-list-header {
+  padding: 16px 0px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+.category-section {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.filter-section {
+  width: 25%;
+}
+.close-filter-section {
+  display: none;
+}
+
+.list-section {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.close-list-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.relative {
+  position: relative;
+}
+
+.recommended-section {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  width: 14rem;
+  background-color: #ffffff;
+  left: -3rem;
+  bottom: -13.25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 3px;
+  padding: 0.75rem;
+  display: none;
+  z-index: 20;
+}
+
+.dropdown li {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: right;
+  color: #252020;
+  padding: 2px 3px;
+}
+
+.dropdown.show {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px 16px;
+  }
+  .list-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .filter-section {
+    display: none;
+  }
+  .item-count-container {
+    display: none;
+  }
+  .item-list-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .recommended-text {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.05rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-hidde {
+    display: none;
+  }
+}

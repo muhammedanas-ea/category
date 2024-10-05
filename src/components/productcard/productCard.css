@@ -1,0 +1,59 @@
+.card {
+  background-color: white;
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+}
+
+.imgae-container{
+  height: 22.875rem;
+}
+
+.card img {
+  object-fit:fill ;
+  width: 100%;
+  height: 100%;
+}
+
+.card-content {
+  padding: 20px 0;
+}
+
+.card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.35rem;
+  margin-bottom: 10px;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 290px;
+}
+
+.card-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.05rem;
+  color: #888792;
+}
+.card-description span {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.05rem;
+  }
+  .imgae-container{
+    height: 14rem;
+  }
+  .card-description {
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+    color: #888792;
+  }
+}
