@@ -1,114 +1,134 @@
 .footer {
-    background-color: #000;
-    color: #fff;
-    padding: 40px;
-    font-family: 'Arial', sans-serif;
+  padding: 30px 96px;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer .section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #444;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  gap: 20px; /* Added gap for better spacing between sections */
+}
+.footer .section h3{
+  margin-bottom: 10px;
+}
+.footer .section div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+
+.footer .section input[type="email"] {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #444;
+  background-color: #fff;
+  color: #000;
+  margin-right: 10px;
+}
+
+.footer .section input[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer .bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.footer .bottom div {
+  flex: 1;
+  margin-bottom: 20px; /* Adds space between flex items */
+}
+
+.space{
+  padding-top: 10px;
+}
+
+.footer .bottom div ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .bottom div ul li {
+  margin: 20px 0px;
+}
+
+.footer .bottom .social-icons a {
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.payment-icons{
+  margin-top: 20px;
+}
+.footer .bottom .payment-icons img {
+  margin-right: 10px;
+}
+
+.footer .bottom .copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 40px; /* Reduced padding for mobile */
   }
-  
-  .footer h3 {
-    color: #fff;
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 600;
-  }
-  
-  .footer p, .footer a, .footer span {
-    color: #ccc;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .footer a:hover {
-    color: #fff;
-  }
-  
-  .contain {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    margin-top: 15px;
+
+  .footer .section {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
     padding-bottom: 20px;
-    border-bottom: 1px solid white;
-    grid-template-columns: 1fr 1fr;
   }
-  
-  .newsletter-input {
-    display: flex;
-    margin-top: 20px;
+
+  .footer .section div {
+    margin: 0;
   }
-  
-  .newsletter-input input {
-    padding: 10px;
-    border: 1px solid #555;
-    border-radius: 5px;
-    outline: none;
-    width: 250px;
-    background-color: #222;
-    color: #fff;
+
+  .footer .section input[type="email"] {
+    width: 100%; /* Full width on mobile */
+    margin-right: 0;
   }
-  
-  .newsletter-input input::placeholder {
-    color: #888;
+
+  .footer .section input[type="submit"] {
+    margin-top: 10px; /* Add space between input and submit button */
+    width: 100%;
   }
-  
-  .newsletter-input button {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin-left: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+
+  .footer .bottom {
+    flex-direction: column; /* Stack items vertically on mobile */
   }
-  
-  .newsletter-input button:hover {
-    background-color: #555;
+
+  .footer .bottom div {
+    margin-bottom: 30px; /* Increased spacing for readability */
   }
-  
-  
-  .footer-column ul {
-    list-style: none;
+
+  .footer .bottom .copyright {
+    margin-top: 0;
   }
-  
-  .footer-column ul li {
-    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 20px 20px; /* Further reduced padding for small devices */
   }
-  
-  .footer-column ul li a {
-    color: #ccc;
-    text-decoration: none;
+
+  .footer .section input[type="email"], .footer .section input[type="submit"] {
+    font-size: 14px; /* Slightly smaller text for input fields */
   }
-  
-  .footer-column ul li span {
-    display: inline-block;
-    color: #ccc;
+
+  .footer .bottom div ul li {
+    margin-bottom: 8px; /* Less margin between list items */
   }
-  
-  .footer-column ul li a:hover,
-  .footer-column ul li span:hover {
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-newsletter {
-      grid-column: span 1;
-      text-align: left;
-    }
-  
-    .newsletter-input {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .newsletter-input input,
-    .newsletter-input button {
-      width: 100%;
-      margin: 5px 0;
-    }
-  
-    .footer-column {
-      text-align: center;
-    }
-  }
-  
+}
