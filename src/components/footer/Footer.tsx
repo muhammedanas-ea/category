@@ -1,4 +1,5 @@
 import "./footer.css";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -18,7 +19,12 @@ const Footer = () => {
           <p className="space">customercare@mettamuse.com</p>
           <h3 className="space">CURRENCY</h3>
           <p>
-            <img alt="Flag of USA" src="https://placehold.co/20x20" />
+          <Image
+              src="/images/United States of America (US).png"
+              alt="menu-icon"
+              width={20}
+              height={20}
+            />
             USD
           </p>
           <p className="space">
@@ -63,12 +69,36 @@ const Footer = () => {
           </div>
           <h3>mettà muse ACCEPTS</h3>
           <div className="payment-icons">
-            <img alt="Apple Pay" src="https://placehold.co/40x20" />
-            <img alt="MasterCard" src="https://placehold.co/40x20" />
-            <img alt="Visa" src="https://placehold.co/40x20" />
-            <img alt="American Express" src="https://placehold.co/40x20" />
-            <img alt="PayPal" src="https://placehold.co/40x20" />
-            <img alt="Google Pay" src="https://placehold.co/40x20" />
+            <Image
+              src="/images/Group 136188.png"
+              alt="menu-icon"
+              width={40}
+              height={20}
+            />
+            <Image
+              src="/images/Group 136192.png"
+              alt="menu-icon"
+              width={40}
+              height={20}
+            />
+            <Image
+              src="/images/Group 136193.png"
+              alt="menu-icon"
+              width={40}
+              height={20}
+            />
+            <Image
+              src="/images/Group 136194.png"
+              alt="menu-icon"
+              width={40}
+              height={20}
+            />
+            <Image
+              src="/images/Group 136195.png"
+              alt="menu-icon"
+              width={40}
+              height={20}
+            />
           </div>
         </div>
       </div>
